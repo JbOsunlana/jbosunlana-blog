@@ -126,3 +126,10 @@ LOGOUT_REDIRECT_URL = 'home'
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+DEFAULT_FROM_EMAIL = 'talkwithjubril@gmail.com'
+EMAIL_HOST = 'smtp.sendgrid.net'
+EMAIL_HOST_USER = 'apikey'
+EMAIL_HOST_PASSWORD = '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'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
