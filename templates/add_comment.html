@@ -1,10 +1,12 @@
 {% extends 'base.html' %}
-
+ Comment On Blog Post 
 {% block content %}
-    <h1>New Blog Post</h1>
-    <form action="" method="post">
+
+<h1>Add Comment </h1>
+<br/><br/>
+  <form action="" method="post">
         {% csrf_token %}
         {{ form.as_p }}
         <button class="btn btn-success ml-2" type="submit">Save</button>
-    </form>
-{% endblock %}
+  </form>
+{% endblock content %}

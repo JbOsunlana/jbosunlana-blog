@@ -1,13 +1,11 @@
+
 {% extends 'base.html' %}
-
+<h1> Home </h1>
 {% block content %}
-    {% for post in object_list %}
-        <div class="post-entry">
-            <h2><a href="{% url 'post_detail' post.pk %}">{{ post.title }}</a></h2>
-            <p>{{post.body}}</p>
-            <h4>{{post.date_created}}</h4>
-        </div>
-    {% endfor %}
-
-{% endblock %}
-
+<br/>
+<div class="jumbotron">
+    <h1 class="display-4">JIBOU BLOG</h1>
+    <p class="lead">A Blog Website by Jubril Osunlana and Friends!</p> 
+    <p class="lead"> <a class="btn btn-primary btn-lg" href="{% url 'post_list' %}" role="button">View All Posts</a> </p>
+</div>
+{% endblock content %}
